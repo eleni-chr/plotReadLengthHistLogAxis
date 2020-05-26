@@ -45,7 +45,7 @@ data6=readmatrix('NanoPlot-data_barcode12.txt'); %load data.
 lengths6=data6(:,2); %read lengths.
 N50_6=1350;
 
-%Supblot 1.
+%Subplot 1.
 fig=figure('Position', get(0, 'Screensize')); %make figure full-screen.
 ax(1)=subplot(2,3,1);
 h1=histogram(lengths1);
@@ -61,7 +61,7 @@ New_XTickLabel = get(gca,'xtick');
 set(gca,'XTickLabel',New_XTickLabel);
 xlim([0 10000]);
 
-%Supblot 2.
+%Subplot 2.
 ax(2)=subplot(2,3,2);
 h2=histogram(lengths2);
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -76,7 +76,7 @@ New_XTickLabel = get(gca,'xtick');
 set(gca,'XTickLabel',New_XTickLabel);
 xlim([0 10000]);
 
-%Supblot 3.
+%Subplot 3.
 ax(3)=subplot(2,3,3);
 h3=histogram(lengths3);
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -91,7 +91,7 @@ New_XTickLabel = get(gca,'xtick');
 set(gca,'XTickLabel',New_XTickLabel);
 xlim([0 10000]);
 
-%Supblot 4.
+%Subplot 4.
 ax(4)=subplot(2,3,4);
 h4=histogram(lengths4);
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -106,7 +106,7 @@ New_XTickLabel = get(gca,'xtick');
 set(gca,'XTickLabel',New_XTickLabel);
 xlim([0 10000]);
 
-%Supblot 5.
+%Subplot 5.
 ax(5)=subplot(2,3,5);
 h5=histogram(lengths5);
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -121,7 +121,7 @@ New_XTickLabel = get(gca,'xtick');
 set(gca,'XTickLabel',New_XTickLabel);
 xlim([0 10000]);
 
-%Supblot 6.
+%Subplot 6.
 ax(6)=subplot(2,3,6);
 h6=histogram(lengths6);
 ylabel('Number of reads','FontSize',12); %add y-axis label.
